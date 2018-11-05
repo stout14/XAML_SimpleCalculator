@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XAML_SimpleCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="365" Width="343" MaxWidth="343" MaxHeight="365" MinWidth="343" MinHeight="365">
+    <Canvas Margin="0,0,-8,0" Background="Gray">
+        <TextBox x:Name="textBox_Result" Height="29" Canvas.Left="30" Text="0" Canvas.Top="37" Width="280" FontSize="20" FontWeight="Bold" FontFamily="Microsoft Sans Serif" MaxLines="1"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="128,55,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="-100" Canvas.Top="25" Click="button_click"/>
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="28" Canvas.Top="140" Click="button_click"/>
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="28" Canvas.Top="200" Click="button_click"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="28" Canvas.Top="260" Click="button_click"/>
+        <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="85" Canvas.Top="80" Click="button_click"/>
+        <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="85" Canvas.Top="140" Click="button_click"/>
+        <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="85" Canvas.Top="200" Click="button_click"/>
+        <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="145" Canvas.Top="80" Click="button_click"/>
+        <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="145" Canvas.Top="140" Click="button_click"/>
+        <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="145" Canvas.Top="200" Click="button_click"/>
+        <Button Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="145" Canvas.Top="260" Click="button_click"/>
+        <Button Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="205" Canvas.Top="80" Click="operator_click"/>
+        <Button Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="205" Canvas.Top="140" Click="operator_click"/>
+        <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="205" Canvas.Top="260" Click="operator_click"/>
+        <Button Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="205" Canvas.Top="200" Click="operator_click"/>
+        <Button Content="CE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="265" Canvas.Top="80" Click="clear_entry"/>
+        <Button Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="265" Canvas.Top="140" Click="clear_All"/>
+        <Button Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="105" FontSize="22" FontFamily="Microsoft Sans Serif" FontWeight="Bold" RenderTransformOrigin="-1.68,1.138" Canvas.Left="265" Canvas.Top="200" Click="equals_click"/>
+        <Label x:Name="labelCurrentOperation" Content="" Height="26" Canvas.Left="30" Canvas.Top="8" Width="280" FontSize="16" FontFamily="Microsoft Sans Serif"/>
+
+
+
+
+
+
+    </Canvas>
 </Window>
